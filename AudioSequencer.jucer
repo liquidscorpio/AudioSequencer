@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="UYbMNj" name="AudioSequencer" projectType="guiapp" version="0.0.1"
+              bundleIdentifier="com.liquidscorpio.AudioSequencer" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.0">
+  <MAINGROUP id="KA2GY1" name="AudioSequencer">
+    <GROUP id="{0E942AEB-A32D-F8E7-618F-9EB456BFF87E}" name="Source">
+      <FILE id="EUsTJI" name="SharedMacros.h" compile="0" resource="0" file="Source/SharedMacros.h"/>
+      <GROUP id="{37B18116-ABDB-6CF0-A9B6-9CBAA0E4D1CA}" name="Components">
+        <FILE id="TfUFD6" name="PlayerBar.cpp" compile="1" resource="0" file="Source/PlayerBar.cpp"/>
+        <FILE id="YHZxqP" name="PlayerBar.h" compile="0" resource="0" file="Source/PlayerBar.h"/>
+        <FILE id="bGUC7l" name="Track.cpp" compile="1" resource="0" file="Source/Track.cpp"/>
+        <FILE id="JACupK" name="Track.h" compile="0" resource="0" file="Source/Track.h"/>
+        <FILE id="graWfJ" name="TrackNote.cpp" compile="1" resource="0" file="Source/TrackNote.cpp"/>
+        <FILE id="T5TspN" name="TrackNote.h" compile="0" resource="0" file="Source/TrackNote.h"/>
+      </GROUP>
+      <FILE id="PCdfW2" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="C4hGQD" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioSequencer"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioSequencer"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_video" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Downloads/JUCE 2/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="AudioSequencer"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="AudioSequencer"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_video" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Downloads/JUCE 2/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioSequencer"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioSequencer"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_video" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Downloads/JUCE 2/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Downloads/JUCE 2/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
