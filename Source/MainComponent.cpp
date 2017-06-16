@@ -21,6 +21,7 @@ public:
         track = new Track();
         addAndMakeVisible(track);
         track->fitToView();
+        track->renderChildren();
     }
 
     ~MainContentComponent()
@@ -51,6 +52,7 @@ public:
     {
         if (track) {
             track->fitToView();
+            track->renderChildren();
         }
         
         if (playerBar) {

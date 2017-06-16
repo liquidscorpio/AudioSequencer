@@ -16,6 +16,7 @@ public:
     void paint (Graphics&) override;
     void resized() override;
     void fitToView();
+    void renderChildren();
     
     class LabelBar : public Component
     {
@@ -25,16 +26,19 @@ public:
             trackName->setText(name);
             addAndMakeVisible(trackName);
             trackName->setColour(trackName->textColourId, Colours::white);
-            // yPos is set to 5 because TextEditor does not support vertical
-            // alignment
-            trackName->setBounds(0, 5, getParentWidth(), getParentHeight());
-            trackName->setColour(trackName->backgroundColourId, Colour(0x00000000u));
-            trackName->setColour(trackName->focusedOutlineColourId, Colour(0x00000000u));
+            trackName->setFont(18.0f);
+            // TextEditor does not support vertical alignment
+            trackName->setBounds(LABELBAR_PADDING, LABELBAR_PADDING,
+                                 getParentWidth(), getParentHeight());
+            trackName->setColour(trackName->backgroundColourId,
+                                 Colour(0x00000000u));
+            trackName->setColour(trackName->focusedOutlineColourId,
+                                 Colour(0x00000000u));
         }
         
         void paint(Graphics& g) override {
-            g.fillAll (BACKGROUND_LIGHTGREY);
-            g.setColour (BACKGROUND_LIGHTGREY);
+            g.fillAll (Colours::orange);
+            g.setColour (Colours::orange);
             g.drawRect (getLocalBounds(), 1);
         }
 
@@ -45,7 +49,7 @@ public:
 private:
     ScopedPointer<Colour> backgroundColour;
     ScopedPointer<LabelBar> labelBar;
-    std::vector<TrackNote> notesList;
+    std::vector<TrackNote> notesList = std::vector<TrackNote>(6);
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Track)
 };
 

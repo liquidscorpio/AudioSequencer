@@ -11,8 +11,10 @@ public:
 
     void paint (Graphics&) override;
     void resized() override;
-
+    void renderChildren();
+    
 private:
+    Label noteDisplay;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TrackNote)
 };
 

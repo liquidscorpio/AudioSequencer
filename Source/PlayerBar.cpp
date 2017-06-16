@@ -14,12 +14,9 @@ PlayerBar::~PlayerBar()
 void PlayerBar::paint (Graphics& g)
 {
     g.fillAll (*backgroundColour);
-
     g.setColour (*backgroundColour);
     g.drawRect (getLocalBounds(), 1);
     g.setFont (14.0f);
-    g.drawText ("PlayerBar", getLocalBounds(),
-                Justification::centred, true);
 }
 
 void PlayerBar::fitToView()
@@ -29,5 +26,5 @@ void PlayerBar::fitToView()
 
 void PlayerBar::resized()
 {
-    
+
 }
