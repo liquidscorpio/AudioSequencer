@@ -12,10 +12,12 @@ public:
     void paint (Graphics&) override;
     void resized() override;
     void fitToView();
+    void renderChildren();
 
 private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PlayerBar)
     ScopedPointer<Colour> backgroundColour;
+    ScopedPointer<ImageComponent> playButton;
 };
 
 

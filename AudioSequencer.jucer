@@ -5,6 +5,10 @@
               jucerVersion="4.3.0">
   <MAINGROUP id="KA2GY1" name="AudioSequencer">
     <GROUP id="{0E942AEB-A32D-F8E7-618F-9EB456BFF87E}" name="Source">
+      <GROUP id="{D9D2205E-B444-4DFA-4F9E-05705A15849B}" name="Sounds">
+        <FILE id="vQ8z1M" name="Sine.cpp" compile="1" resource="0" file="Source/Sine.cpp"/>
+        <FILE id="CPALpz" name="Sine.h" compile="0" resource="0" file="Source/Sine.h"/>
+      </GROUP>
       <FILE id="EUsTJI" name="SharedMacros.h" compile="0" resource="0" file="Source/SharedMacros.h"/>
       <GROUP id="{37B18116-ABDB-6CF0-A9B6-9CBAA0E4D1CA}" name="Components">
         <FILE id="TfUFD6" name="PlayerBar.cpp" compile="1" resource="0" file="Source/PlayerBar.cpp"/>

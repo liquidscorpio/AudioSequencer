@@ -13,21 +13,23 @@ TrackNote::~TrackNote()
 
 void TrackNote::paint (Graphics& g)
 {
-    g.fillAll (Colours::black);
-    g.setColour (BACKGROUND_LIGHTGREY);
-    g.drawLine(0, getHeight(), getWidth(), getHeight(), 2);
-//    g.drawLine(0, 0, 0, getHeight(), 2);
-//    g.drawLine(getWidth(), 0, getWidth(), getHeight(), 2);
+    g.fillAll(BACKGROUND_GREY);
+    g.setColour(BACKGROUND_LIGHTGREY);
+    g.drawLine(0, getHeight(), getWidth(), getHeight(), 1);
 }
 
 void TrackNote::renderChildren()
 {
+    Font font("Open Sans", "Light", 35.0f);
+    std::string text = "C#";
+    size_t labelWidth = font.getStringWidth(text) * 2;
+    size_t labelHeight = font.getHeight();
+    size_t gap = LABELBAR_PADDING * 2;
     addAndMakeVisible(noteDisplay);
     noteDisplay.setColour(Label::textColourId, Colour(0xBBFFFFFF));
-    noteDisplay.setBounds(LABELBAR_PADDING, LABELBAR_PADDING,
-                          getWidth() * 0.3, getHeight());
-    noteDisplay.setText("C#", NotificationType::dontSendNotification);
-    noteDisplay.setFont(Font("Gill Sans", "Light", 36.0f));
+    noteDisplay.setBounds(gap, gap, labelWidth, labelHeight);
+    noteDisplay.setFont(font);
+    noteDisplay.setText(text, NotificationType::dontSendNotification);
 }
 
 void TrackNote::resized()
